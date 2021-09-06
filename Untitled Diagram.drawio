@@ -1,11 +1,102 @@
-<mxfile host="app.diagrams.net" modified="2021-04-28T02:15:54.778Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="BXVWwLn86TOpOVFyEY9q" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-06T06:52:17.153Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="e6MZi9wRhq8CoSW7r22u" version="15.0.6" type="github">
   <diagram id="kV8AVYPeI4GKE2GWJKbX" name="Page-1">
-    <mxGraphModel dx="1176" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="975" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="kGYUclisk1PbKQBWApAA-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="490" width="120" height="60" as="geometry" />
+        <mxCell id="WX8LQyO9qb-D_v_6701a-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WX8LQyO9qb-D_v_6701a-14" target="WX8LQyO9qb-D_v_6701a-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-14" value="分箱" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="90" width="360" height="400" as="geometry">
+            <mxRectangle x="230" y="280" width="60" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-15" value="给定分箱边界分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-14">
+          <mxGeometry y="20" width="360" height="120" as="geometry">
+            <mxRectangle y="20" width="480" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-22" value="输入参数：分箱特征、分箱边界、预测y列名称&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-15">
+          <mxGeometry x="30" y="40" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-16" value="等距分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-14">
+          <mxGeometry y="140" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-26" value="输入参数：分箱特征、分箱数、预测y列名称&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-16">
+          <mxGeometry x="30" y="25" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-17" value="等频分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-14">
+          <mxGeometry y="220" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-27" value="输入参数：分箱特征、分箱数、预测y列名称&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-17">
+          <mxGeometry x="30" y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-19" value="卡方分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-14">
+          <mxGeometry y="310" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-28" value="输入参数：分箱特征、分箱数、卡方停止阈值、预测y列名称&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-19">
+          <mxGeometry x="30" y="30" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.412;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WX8LQyO9qb-D_v_6701a-37" target="WX8LQyO9qb-D_v_6701a-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.347;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WX8LQyO9qb-D_v_6701a-37" target="WX8LQyO9qb-D_v_6701a-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="290" />
+              <mxPoint x="590" y="438" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-37" value="计算分箱评价指标" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="440" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="WX8LQyO9qb-D_v_6701a-41" target="WX8LQyO9qb-D_v_6701a-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-41" value="输出评价指标" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="620" y="70" width="150" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-44" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span&gt;事件发生数&lt;br&gt;&lt;/span&gt;&lt;span&gt;事件未发生数&lt;br&gt;&lt;/span&gt;&lt;span&gt;总事件数&lt;br&gt;&lt;/span&gt;&lt;span&gt;odds&lt;br&gt;&lt;/span&gt;&lt;span&gt;gini&lt;br&gt;&lt;/span&gt;&lt;span&gt;IV&lt;br&gt;&lt;/span&gt;&lt;span&gt;woe&lt;br&gt;&lt;/span&gt;&lt;span&gt;ks&lt;br&gt;&lt;/span&gt;&lt;span&gt;auc&lt;br&gt;&lt;/span&gt;&lt;span&gt;...&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-41">
+          <mxGeometry y="30" width="150" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-50" value="调整分箱" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="203" width="360" height="190" as="geometry">
+            <mxRectangle x="230" y="280" width="60" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-51" value="拆分分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-50">
+          <mxGeometry y="20" width="360" height="90" as="geometry">
+            <mxRectangle y="20" width="480" height="20" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-52" value="输入参数：要拆分的箱、拆分边界、预测y列名称、新箱编码&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-51">
+          <mxGeometry x="30" y="35" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-53" value="合并分箱" style="swimlane;startSize=20;horizontal=0;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-50">
+          <mxGeometry y="110" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-54" value="输入参数：要合并的箱、预测y列名称、新箱编码&lt;br&gt;输出：原始值、y列、分箱边界、分箱编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-53">
+          <mxGeometry x="30" y="25" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WX8LQyO9qb-D_v_6701a-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="430" />
+              <mxPoint x="820" y="430" />
+              <mxPoint x="820" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-61" value="指标趋势图" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="WX8LQyO9qb-D_v_6701a-62" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;span&gt;各箱事件柱状图&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;各箱woe趋势折线图&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WX8LQyO9qb-D_v_6701a-61">
+          <mxGeometry y="30" width="180" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
